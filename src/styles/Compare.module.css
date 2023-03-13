@@ -1,0 +1,52 @@
+.heading {
+  text-transform: uppercase;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-areas: "title bar units";
+  grid-template-columns: 160px 1fr auto;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  grid-area: title;
+}
+
+.bar {
+  grid-area: bar;
+  height: 28px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 0 1px #222;
+  transition: width 0.5s ease;
+}
+
+.toBar {
+}
+
+.fromBar {
+  background-color: #444;
+}
+
+.unit {
+  grid-area: units;
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-areas: "title title" "bar units";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 1.4rem;
+  }
+}
