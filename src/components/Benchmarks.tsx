@@ -29,6 +29,18 @@ const benchmarks = {
       unit: "Wh",
     },
   },
+  something: {
+    from: {
+      label: "Something",
+      amount: 12,
+      unit: "x",
+    },
+    to: {
+      label: "Orbit Solar",
+      amount: 100,
+      unit: "x",
+    },
+  },
 } satisfies {
   [key: string]: { from: CompareUnit; to: CompareUnit };
 };
@@ -52,6 +64,13 @@ const Benchmarks = forwardRef((props, ref) => {
         from={benchmarks.power.from}
         to={benchmarks.power.to}
         color="#8957e5"
+      />
+
+      <Compare
+        title="Something Else"
+        from={benchmarks.something.from}
+        to={benchmarks.something.to}
+        color="#b62324"
       />
     </div>
   );

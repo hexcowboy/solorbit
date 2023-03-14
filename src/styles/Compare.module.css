@@ -1,12 +1,20 @@
-.heading {
-  text-transform: uppercase;
-}
-
 .stack {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
+  position: relative;
+}
+
+.heading {
+  text-transform: uppercase;
+  margin-left: -20px;
+}
+
+.dots {
+  position: absolute;
+  top: -20px;
+  left: -40px;
 }
 
 .row {
@@ -31,7 +39,8 @@
   transition: width 0.5s ease;
 }
 
-.toBar {
+.bar:hover {
+  opacity: 0.8;
 }
 
 .fromBar {

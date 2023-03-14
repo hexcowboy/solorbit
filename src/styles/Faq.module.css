@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  padding: 6rem;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.closeIcon {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 4rem 2rem;
+  }
+}

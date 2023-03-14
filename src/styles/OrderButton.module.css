@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  background: radial-gradient(ellipse at center, #222, transparent);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+.szh-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.szh-accordion > :not(:last-child) {
+  border-bottom: 1px solid #666;
+}
+
+.szh-accordion__item {
+  padding: 1.4rem 0;
+}
+
+.szh-accordion__item-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.szh-accordion__item-btn {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.szh-accordion__item-content {
+  transition: height 0.2s ease-in-out;
+  padding: 0 1rem;
+}

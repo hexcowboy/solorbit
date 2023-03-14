@@ -5,18 +5,24 @@ interface Props {
   height: number;
 }
 
-const css: CSSProperties = {
-  backgroundImage:
-    "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-  backgroundSize: "30px 30px",
-};
-
 const Dots = ({
   width,
   height,
+  color,
   ...props
 }: Props & JSX.IntrinsicElements["div"]) => {
-  return <div style={{ ...css, width, height }} {...props} />;
+  return (
+    <div
+      style={{
+        width,
+        height,
+        backgroundImage: `radial-gradient(circle at 1px 1px, ${color} 1px, transparent 0)`,
+        backgroundSize: "30px 30px",
+        zIndex: -1,
+      }}
+      {...props}
+    />
+  );
 };
 
 export default Dots;

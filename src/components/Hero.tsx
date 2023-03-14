@@ -18,7 +18,7 @@ const Hero = ({ scrollDownRef }: Props) => {
         Orbit Solar
       </h1>
 
-      {/* <div className={styles.image}> */}
+      <div className={styles.image}>
       {/*   <Image */}
       {/*     src="/starlink-hero.webp" */}
       {/*     alt="Starlink silhouette" */}
@@ -27,7 +27,7 @@ const Hero = ({ scrollDownRef }: Props) => {
       {/*     className={styles.photo} */}
       {/*   /> */}
       {/*   <Dots width={700} height={400} className={styles.dots} /> */}
-      {/* </div> */}
+      </div>
 
       <div className={styles.bottomPanel}>
         <p className={clsx(barlowDescription.className, styles.description)}>

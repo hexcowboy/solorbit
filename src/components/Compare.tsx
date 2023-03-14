@@ -6,6 +6,8 @@ import { barlowDescription, barlowTitle } from "@/fonts";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import styles from "@/styles/Compare.module.css";
 
+import Dots from "./Dots";
+
 export type CompareUnit = {
   label: string;
   amount: number;
@@ -34,6 +36,7 @@ const Compare = ({ title, to, from, color = "#39d353" }: Props) => {
   return (
     <div className={styles.stack}>
       <h2 className={clsx(styles.heading, barlowTitle.className)}>{title}</h2>
+      <Dots width={380} height={100} className={styles.dots} color="#666" />
 
       <div className={styles.row}>
         <h3 className={clsx(styles.title, barlowTitle.className)}>
