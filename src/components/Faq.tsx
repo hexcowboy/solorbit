@@ -1,13 +1,20 @@
 import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 import { IconX } from "@tabler/icons-react";
+import { useRef } from "react";
 
 import { barlowDescription, barlowTitle } from "@/fonts";
 import styles from "@/styles/Faq.module.css";
 
+import Dots from "./Dots";
+
 const Faq = () => {
+  const ref = useRef<HTMLHeadingElement>(null);
+
   return (
     <div className={styles.main}>
-      <h2 className={barlowTitle.className}>FAQ</h2>
+      <h2 className={barlowTitle.className} ref={ref}>
+        FAQ
+      </h2>
 
       <Accordion
         className={barlowDescription.className}
@@ -70,6 +77,8 @@ const Faq = () => {
           Fusce vulputate purus sed tempus feugiat.
         </AccordionItem>
       </Accordion>
+
+      <Dots width={(ref.current?.clientWidth || 600) + 2} height={120} color="#666" />
     </div>
   );
 };
