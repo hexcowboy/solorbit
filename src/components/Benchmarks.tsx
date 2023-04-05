@@ -12,7 +12,7 @@ const benchmarks = {
       unit: "hours",
     },
     to: {
-      label: "Orbit Solar Router",
+      label: "Solorbit Router",
       amount: 20,
       unit: "hours",
     },
@@ -24,7 +24,7 @@ const benchmarks = {
       unit: "Wh",
     },
     to: {
-      label: "Orbit Solar",
+      label: "Solorbit",
       amount: 20,
       unit: "Wh",
     },
@@ -36,7 +36,7 @@ const benchmarks = {
       unit: "x",
     },
     to: {
-      label: "Orbit Solar",
+      label: "Solorbit",
       amount: 100,
       unit: "x",
     },

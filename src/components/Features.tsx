@@ -16,7 +16,7 @@ const Features = () => {
   return (
     <div className={styles.main}>
       <div className={styles.title}>
-        <h2 className={barlowTitle.className}>Orbit Components</h2>
+        <h2 className={barlowTitle.className}>Solorbit Components</h2>
         <p className={barlowDescription.className}>
           The system is composed of a few different parts to make Starlink
           travel possible.

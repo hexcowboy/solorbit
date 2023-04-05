@@ -25,7 +25,7 @@ const Faq = () => {
         <AccordionItem
           header={({ state }) => (
             <div className={styles.header}>
-              <span>What is Orbit Solar?</span>
+              <span>What is Solorbit?</span>
               <IconX
                 style={{
                   transform: `rotate(${state.isEnter ? "0" : "45"}deg)`,

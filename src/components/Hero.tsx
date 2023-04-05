@@ -15,7 +15,7 @@ const Hero = ({ scrollDownRef }: Props) => {
   return (
     <div className={styles.main}>
       <h1 className={clsx(barlowTitle.className, styles.header)}>
-        Orbit Solar
+        Solorbit
       </h1>
 
       <div className={styles.image}>
