@@ -1,11 +1,10 @@
 import { IconArrowDown } from "@tabler/icons-react";
 import { clsx } from "clsx";
+import Image from "next/image";
 
-// import Image from "next/image";
-import { barlowDescription, barlowTitle } from "@/fonts";
+import logo from "@/assets/logo.svg";
+import { barlowDescription } from "@/fonts";
 import styles from "@/styles/Hero.module.css";
-
-// import Dots from "./Dots";
 
 interface Props {
   scrollDownRef: React.RefObject<HTMLDivElement>;
@@ -14,20 +13,7 @@ interface Props {
 const Hero = ({ scrollDownRef }: Props) => {
   return (
     <div className={styles.main}>
-      <h1 className={clsx(barlowTitle.className, styles.header)}>
-        Solorbit
-      </h1>
-
-      <div className={styles.image}>
-      {/*   <Image */}
-      {/*     src="/starlink-hero.webp" */}
-      {/*     alt="Starlink silhouette" */}
-      {/*     width={700} */}
-      {/*     height={400} */}
-      {/*     className={styles.photo} */}
-      {/*   /> */}
-      {/*   <Dots width={700} height={400} className={styles.dots} /> */}
-      </div>
+      <Image src={logo} alt="Solorbit logo" width={300} />
 
       <div className={styles.bottomPanel}>
         <p className={clsx(barlowDescription.className, styles.description)}>
