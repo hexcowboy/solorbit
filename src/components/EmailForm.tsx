@@ -10,7 +10,6 @@ import styles from "@/styles/EmailForm.module.css";
 const EmailForm = () => {
   const [signedUp, setSignedUp] = useState(false);
   const [loading, setLoading] = useState(false);
-  console.log(loading);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
