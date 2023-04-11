@@ -1,0 +1,75 @@
+.main {
+  box-sizing: border-box;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.input {
+  color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  backdrop-filter: blur(10px);
+  background: #111111dd;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 11px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  background: radial-gradient(ellipse at center, #222, transparent);
+  cursor: pointer;
+}
+
+.loader {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .input {
+    flex: 1;
+    flex-basis: 0;
+  }
+}

@@ -13,7 +13,12 @@ interface Props {
 const Hero = ({ scrollDownRef }: Props) => {
   return (
     <div className={styles.main}>
-      <Image src={logo} alt="Solorbit logo" width={300} />
+      <Image
+        src={logo}
+        alt="Solorbit logo"
+        width={300}
+        className={styles.header}
+      />
 
       <div className={styles.bottomPanel}>
         <p className={clsx(barlowDescription.className, styles.description)}>

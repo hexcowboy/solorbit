@@ -2,10 +2,10 @@ import Head from "next/head";
 import { useRef } from "react";
 
 import Benchmarks from "@/components/Benchmarks";
+import EmailForm from "@/components/EmailForm";
+import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
-import Faq from "@/components/Faq";
-import OrderButton from "@/components/OrderButton";
 import styles from "@/styles/Home.module.css";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <OrderButton />
+      <EmailForm />
       <main className={styles.main}>
         <Hero scrollDownRef={benchmarkRef} />
         <Benchmarks ref={benchmarkRef} />
